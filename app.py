@@ -27,3 +27,11 @@ while True:
         break
     else:
         print("Invalid option")
+def delete_notes():
+    open("notes.txt", "w").close()
+    print("All notes deleted!")
+Add menu option inside loop:
+print("4. Delete All Notes")
+And inside conditions:
+elif choice == "4":
+    delete_notes()
